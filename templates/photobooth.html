@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Photobooth</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="vintage-background">
+    <div class="photobooth-container">
+        <h1 class="title">Strike a Pose!</h1>
+
+        <img src="/static/Vintage Camera_ Black and White Photography by FaithfulFind _ Redbubble.jpg" alt="Vintage Camera" class="vintage-image">
+
+
+        <!-- Live Camera Feed -->
+        <video id="camera-feed" autoplay playsinline></video>
+
+        <!-- Countdown Timer -->
+        <div id="countdown" class="hidden">3</div>
+
+        <!-- Capture Button -->
+        <button id="capture-btn">📸 Capture</button>
+
+        <!-- Captured Photo Display -->
+        <div id="photo-frame" class="hidden vintage-border">
+            <img id="captured-photo" src="" alt="Your Vintage Photo">
+        </div>
+
+        <!-- Download and Retry Buttons Below -->
+        <div class="btn-container">
+            <a id="download-btn" download="vintage_photo.png">📥 Download</a>
+            <button id="retry-btn">🔄 Capture Again</button>
+        </div>
+    </div>
+
+    <script src="/static/photobooth.js" defer></script>
+</body>
+</html>

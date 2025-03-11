@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.vintage-background {
+    background-image: url('/static/download.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero, .photobooth-container {
+    background-color: rgba(0, 0, 0, 0.8); 
+    border: 8px solid #8B4513;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.start-btn, #capture-btn, #retry-btn, #download-btn {
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 18px;
+}
+
+.start-btn:hover, #capture-btn:hover, #retry-btn:hover, #download-btn:hover {
+    background-color: #A0522D;
+}
+
+#photo-frame img {
+    width: 100%;
+    border: 10px solid #8B4513; /* Vintage frame */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.vintage-border {
+    border: 15px solid #8B4513;
+    padding: 10px;
+}
+.vintage-image {
+    width: 130px;      /* Slightly bigger size */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Centers the image */
+    
+    border: 3px solid #8B4513; /* Vintage brown border */
+    border-radius: 10px;       /* Softer rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Softer shadow for depth */
+    filter: drop-shadow(0 0 8px rgba(139, 69, 19, 0.5)); /* Warm glow */
+
+}
